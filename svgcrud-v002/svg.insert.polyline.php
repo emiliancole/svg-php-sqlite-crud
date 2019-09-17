@@ -19,15 +19,9 @@ if( isset($_POST['submit_data']) ){
 }
 
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Insert Svg polyline Data</title>
-</head>
-<body>
-    <div style="width:700px; margin: 20px auto;">
+    <div style="width:700px; margin: 20px auto;">INSERT polyline
         <!-- showing the message here-->
-        <div><?= $message;?></div>polyline
+        <div><?= $message;?></div>
         <table width="100%" cellpadding="5" cellspacing="1" border="1">
             <form action="" method="post">
             <tr><td>points:</td><td><input name="points" type="text" 

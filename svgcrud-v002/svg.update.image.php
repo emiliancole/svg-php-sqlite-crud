@@ -15,7 +15,7 @@ if( isset($_POST['submit_data']) ){
     
 	// Makes query with post data
 	$query = "UPDATE image SET x='$x',y='$y', width='$width',height='$height',     
-    href='$rx',style='$style' WHERE rowid=$id";
+    href='$href',style='$style' WHERE rowid=$id";
 	
 	if( $db->exec($query) ){
 		$message = "Data is updated successfully.";
@@ -30,18 +30,10 @@ $query = "SELECT * FROM image WHERE rowid=$id";
 $result = $db->query($query);
 $data = $result->fetchArray(); // set the row in $data
 ?>
-
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Update Svg image Data</title>
-</head>
-<body>
 	<div style="width:700px; margin: 20px auto;">
 
 		<!-- showing the message here-->
-		<div><?php echo $message;?></div>
-
+		<div><?= $message;?></div>UPDATE image
 		<table width="100%" cellpadding="5" cellspacing="1" border="1">
 			<form action="" method="post">
 			<input type="hidden" name="id" value="<?php echo $id;?>">
@@ -53,14 +45,14 @@ $data = $result->fetchArray(); // set the row in $data
             value="<?= $data['width'];?>"></td></tr>
             <tr><td>height:</td><td><input name="height" type="text" 
             value="<?= $data['height'];?>"></td></tr>
-			<tr><td>href:</td><td><input name="href" type="text" 
-            value="<?= $data['rx'];?>"></td></tr>
+			<tr><td>href:</td><td><input name="href" type="text" size="100"
+            value="<?= $data['href'];?>"></td></tr>
             
-			<tr><td>style:</td><td><input name="style" type="text" 
+			<tr><td>style:</td><td><input name="style" type="text" size="100"
             value="<?= $data['style'];?>"></td></tr>
 			<tr>
 				<td>==></td>
-				<td><input name="submit_data" type="submit" value="Update Svg Data"></td>
+				<td><input name="submit_data" type="submit" value="Update Svg image Data"></td>
 			</tr>
 			</form>
 		</table>

@@ -28,9 +28,9 @@ if( isset($_POST['submit_data']) ){
 }
 
 ?>
-    <div style="width: 700px; margin: 20px auto;">
+    <div style="width: 700px; margin: 20px auto;">INSERT rect
         <!-- showing the message here-->
-        <div><?php echo $message;?></div>
+        <div><?= $message;?></div>
         <table width="100%" style="background-color:lightgreen;border:1px solid black;">
             <form action="" method="post">
             <tr><td>x:</td><td><input name="x" type="text" value="100"></td></tr>

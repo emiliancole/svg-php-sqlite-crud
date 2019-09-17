@@ -8,14 +8,7 @@ $query = "SELECT rowid, * FROM image";
 $result = $db->query($query);
 
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Data Svg List image</title>
-</head>
-<body>
-	<div style="width:700px; margin: 20px auto;">
-		
+	<div style="width:700px; margin: 20px auto;">image		
 		<table width="100%" cellpadding="5" cellspacing="1" border="1">
 			<tr>
 <td>x</td><td>y</td><td>width</td><td>height</td><td>href</td><td>style</td>			
@@ -33,9 +26,8 @@ $result = $db->query($query);
 		</table>
 	</div>
 <hr>
-
 <?php
-echo "<svg viewBox='0 0 500 500'>";
+echo "<svg width='500' height='500' viewBox='0 0 500 500'>";
 while($row = $result->fetchArray()) {
 	$x=$row['x']; $y=$row['y']; $width=$row['width']; $height=$row['height'];
 	$href=$row['href']; 

@@ -25,7 +25,7 @@ if( isset($_POST['submit_data']) ){
     <title>Insert Svg path Data</title>
 </head>
 <body>
-    <div style="width: 700px; margin: 20px auto;">
+    <div style="width: 700px; margin: 20px auto;">INSERT path
         <!-- showing the message here-->
         <div><?php echo $message;?></div>
         <table width="100%" cellpadding="5" cellspacing="1" border="1">

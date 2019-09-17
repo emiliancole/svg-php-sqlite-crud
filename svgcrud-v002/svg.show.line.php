@@ -31,7 +31,7 @@ $result = $db->query($query);
 <hr>
 
 <?php
-echo "<svg viewBox='0 0 500 500'>";
+echo "<svg width='500' height='500' viewBox='0 0 500 500'>";
 while($row = $result->fetchArray()) {
 	$x1=$row['x1']; $y1=$row['y1']; $x2=$row['x2']; $y2=$row['y2'];
 	$style=$db->escapeString($row['style']);	

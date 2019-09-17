@@ -27,19 +27,13 @@ if( isset($_POST['submit_data']) ){
 }
 
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Insert Svg Data</title>
-</head>
-<body>
-    <div style="width:700px; margin: 20px auto;">image
+    <div style="width:700px; margin: 20px auto;">INSERT image
         <!-- showing the message here-->
-        <div><?php echo $message;?></div>
+        <div><?= $message;?></div>
         <table width="100%" style="background-color:lightgreen;border:1px solid black;">
             <form action="svg.insert.image.php" method="post">
-            <tr><td>x:</td><td><input name="x" type="text" value="100"></td></tr>
-            <tr><td>y:</td><td><input name="y" type="text" value="100"></td></tr>
+            <tr><td>x:</td><td><input name="x" type="text" value="0"></td></tr>
+            <tr><td>y:</td><td><input name="y" type="text" value="0"></td></tr>
 			<tr><td>width:</td><td><input name="width" type="text" value="100%"></td></tr>
             <tr><td>height:</td><td><input name="height" type="text" value="100%"></td></tr>
             <tr><td>href:</td><td><input name="href" type="text" size="100" 

@@ -42,8 +42,7 @@ $data = $result->fetchArray(); // set the row in $data
 	<div style="width:700px; margin: 20px auto;">
 
 		<!-- showing the message here-->
-		<div><?php echo $message;?></div>
-
+		<div><?php echo $message;?></div>UPDATE line
 		<table width="100%" cellpadding="5" cellspacing="1" border="1">
 			<form action="" method="post">
 			<input type="hidden" name="id" value="<?php echo $id;?>">

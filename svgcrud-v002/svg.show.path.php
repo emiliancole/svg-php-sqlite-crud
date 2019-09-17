@@ -7,12 +7,6 @@ $query = "SELECT rowid, * FROM path";
 $result = $db->query($query);
 
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Data Svg Show path</title>
-</head>
-<body>
 	<div style="width:700px; margin: 20px auto;">path		
 		<table width="100%" cellpadding="5" cellspacing="1" border="1">
 			<tr><td>d</td><td>style</td></tr>
@@ -27,7 +21,7 @@ $result = $db->query($query);
 <hr>
 
 <?php
-echo "<svg viewBox='0 0 500 500'>";
+echo "<svg width='500' height='500' viewBox='0 0 500 500'>";
 while($row = $result->fetchArray()) {
 	$d=$row['d']; 
 	$style=$db->escapeString($row['style']);	

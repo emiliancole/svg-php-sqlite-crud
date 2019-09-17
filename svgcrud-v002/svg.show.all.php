@@ -1,8 +1,8 @@
 <?php
 include("index.html");
-// Includs database connection
 include("dbSvgConnect.php");
-echo "<svg viewBox='0 0 500 500'>";
+
+echo "<svg width='500' height='500' viewBox='0 0 500 500'>";
 
 $queryImage = "SELECT rowid, * FROM image";
 $result = $db->query($queryImage);
@@ -88,3 +88,4 @@ while($row = $result->fetchArray()) {
 echo "</svg>";
 
 ?>
+

@@ -27,7 +27,7 @@ if( isset($_POST['submit_data']) ){
 }
 
 ?>
-    <div style="width: 700px; margin: 20px auto;">
+    <div style="width: 700px; margin: 20px auto;">INSERT text
         <!-- showing the message here-->
         <div><?= $message;?></div>
         <table width="100%" style="background-color:lightgreen;border:1px solid black;">

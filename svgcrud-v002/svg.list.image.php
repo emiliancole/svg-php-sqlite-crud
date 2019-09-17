@@ -6,12 +6,6 @@ $query = "SELECT rowid, * FROM image";
 $result = $db->query($query);
 
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Data Svg List image</title>
-</head>
-<body>
 	<div style="width: 700px; margin: 20px auto;">
 		<a href="svg.insert.image.php">Add New image</a>
 		<table width="100%" cellpadding="5" cellspacing="1" border="1">

@@ -33,21 +33,13 @@ $query = "SELECT * FROM rect WHERE rowid=$id";
 $result = $db->query($query);
 $data = $result->fetchArray(); // set the row in $data
 ?>
-
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Update Svg rectData</title>
-</head>
-<body>
-	<div style="width: 500px; margin: 20px auto;">
+	<div style="width:700px; margin: 20px auto;">
 
 		<!-- showing the message here-->
-		<div><?php echo $message;?></div>
-
+		<div><?php echo $message;?></div>UPDATE rect
 		<table width="100%" cellpadding="5" cellspacing="1" border="1">
 			<form action="" method="post">
-			<input type="hidden" name="id" value="<?php echo $id;?>">
+			<input type="hidden" name="id" value="<?= $id;?>">
 			<tr><td>x:</td><td><input name="x" type="text" 
             value="<?= $data['x'];?>"></td></tr>
 			<tr><td>y:</td><td><input name="y" type="text" 
@@ -60,11 +52,11 @@ $data = $result->fetchArray(); // set the row in $data
             value="<?= $data['rx'];?>"></td></tr>
             <tr><td>ry:</td><td><input name="ry" type="text" 
             value="<?= $data['ry'];?>"></td></tr>
-			<tr><td>style:</td><td><input name="style" type="text" 
+			<tr><td>style:</td><td><input name="style" type="text" size="100"
             value="<?= $data['style'];?>"></td></tr>
 			<tr>
-				<td><a href="svg.list.rect.php">Back</a></td>
-				<td><input name="submit_data" type="submit" value="Update Svg Data"></td>
+				<td>==></td>
+				<td><input name="submit_data" type="submit" value="Update Svg rect Data"></td>
 			</tr>
 			</form>
 		</table>

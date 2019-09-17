@@ -19,13 +19,7 @@ if( isset($_POST['submit_data']) ){
 }
 
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Insert Svg polygon Data</title>
-</head>
-<body>
-    <div style="width:700px; margin: 20px auto;">
+    <div style="width:700px; margin: 20px auto;">INSERT polygon
         <!-- showing the message here-->
         <div><?= $message;?></div>
         <table width="100%" cellpadding="5" cellspacing="1" border="1">

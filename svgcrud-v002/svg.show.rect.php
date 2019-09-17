@@ -1,6 +1,5 @@
 <?php
 include("index.html");
-// Include database connection
 include("dbSvgConnect.php");
 
 // Makes query with rowid
@@ -8,27 +7,20 @@ $query = "SELECT rowid, * FROM rect";
 $result = $db->query($query);
 
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Data Svg List rect</title>
-</head>
-<body>
-	<div style="width:700px; margin: 20px auto;">
-		
+	<div style="width:700px; margin: 20px auto;">rect		
 		<table width="100%" cellpadding="5" cellspacing="1" border="1">
 			<tr>
 <td>x</td><td>y</td><td>width</td><td>height</td><td>rx</td><td>ry</td><td>style</td>			
 			</tr>
 			<?php while($row = $result->fetchArray()) {?>
 			<tr>
-				<td><?php echo $row['x'];?></td>
-				<td><?php echo $row['y'];?></td>
-				<td><?php echo $row['width'];?></td>
-                <td><?php echo $row['height'];?></td>
-				<td><?php echo $row['rx'];?></td>
-				<td><?php echo $row['ry'];?></td>
-				<td><?php echo $row['style'];?></td>			
+				<td><?= $row['x'];?></td>
+				<td><?= $row['y'];?></td>
+				<td><?= $row['width'];?></td>
+                <td><?= $row['height'];?></td>
+				<td><?= $row['rx'];?></td>
+				<td><?= $row['ry'];?></td>
+				<td><?= $row['style'];?></td>			
 			</tr>
 			<?php } ?>
 		</table>
@@ -36,7 +28,7 @@ $result = $db->query($query);
 <hr>
 
 <?php
-echo "<svg viewBox='0 0 500 500'>";
+echo "<svg width='500' height='500' viewBox='0 0 500 500'>";
 while($row = $result->fetchArray()) {
 	$x=$row['x']; $y=$row['y']; $width=$row['width']; $height=$row['height'];
 	$rx=$row['rx']; $ry=$row['ry'];

@@ -18,15 +18,9 @@ if( isset($_POST['submit_data']) ){
     }
 }
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Insert Svg circle Data</title>
-</head>
-<body>
-    <div style="width:700px; margin: 20px auto;">
+    <div style="width:700px; margin: 20px auto;">INSERT circle
         <!-- showing the message here-->
-        <div><?php echo $message;?></div>
+        <div><?= $message;?></div>
         <table width="100%" style="background-color:lightgreen;border:1px solid black;">
             <form action="" method="post">
             <tr><td>cx:</td><td><input name="cx" type="text" value="100"></td></tr>

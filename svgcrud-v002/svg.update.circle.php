@@ -43,30 +43,29 @@ $data = $result->fetchArray(); // set the row in $data
 	<div style="width: 500px; margin: 20px auto;">
 
 		<!-- showing the message here-->
-		<div><?php echo $message;?></div>
-
+		<div><?= $message;?></div>UPDATE circle
 		<table width="100%" cellpadding="5" cellspacing="1" border="1">
 			<form action="" method="post">
-			<input type="hidden" name="id" value="<?php echo $id;?>">
+			<input type="hidden" name="id" value="<?= $id;?>">
 			<tr>
 				<td>cx:</td>
-				<td><input name="cx" type="text" value="<?php echo $data['cx'];?>"></td>
+				<td><input name="cx" type="text" value="<?= $data['cx'];?>"></td>
 			</tr>
 			<tr>
 				<td>cy:</td>
-				<td><input name="cy" type="text" value="<?php echo $data['cy'];?>"></td>
+				<td><input name="cy" type="text" value="<?= $data['cy'];?>"></td>
 			</tr>
 			<tr>
 				<td>r:</td>
-				<td><input name="r" type="text" value="<?php echo $data['r'];?>"></td>
+				<td><input name="r" type="text" value="<?= $data['r'];?>"></td>
 			</tr>
 			<tr>
 				<td>style:</td>
-				<td><input name="style" type="text" value="<?php echo $data['style'];?>"></td>
+				<td><input name="style" type="text" value="<?= $data['style'];?>"></td>
 			</tr>
 			<tr>
-				<td><a href="svg.list.circle.php">Back</a></td>
-				<td><input name="submit_data" type="submit" value="Update Svg Data"></td>
+				<td>==></td>
+				<td><input name="submit_data" type="submit" value="Update Svg circle Data"></td>
 			</tr>
 			</form>
 		</table>

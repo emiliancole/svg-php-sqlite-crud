@@ -20,7 +20,7 @@ $result = $db->query($query);
 <hr>
 
 <?php
-echo "<svg viewBox='0 0 500 500'>";
+echo "<svg width='500' height='500' viewBox='0 0 500 500'>";
 while($row = $result->fetchArray()) {
 	$points=$row['points']; 
 	$style=$db->escapeString($row['style']);	
