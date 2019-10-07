@@ -1,0 +1,19 @@
+<?php
+include("index.html");
+include "dbSvgConnect.php";
+
+$id = $_GET['id']; // rowid from url
+
+// Prepare the deleting query according to rowid
+$query = "DELETE FROM imagetr WHERE rowid=$id";
+
+if( $db->query($query) ){
+	$message = "</br>Record is deleted successfully.";
+}else {
+	$message = "</br>Sorry, Record is not deleted.";
+}
+
+echo $message;
+?>
+
+
