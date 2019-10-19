@@ -17,3 +17,6 @@ A CRUD interface to Sqlite3 database for svg
 - v006: linetr, pathtr, polygontr, polylinetr tables added. They have the transform attribute field for their respective tables.
   - help table added (Help menu link).
   
+- v007: arc, cubic, quadratic tables addded. They are specific extensions for the path tag.
+  - help updated.
+  
