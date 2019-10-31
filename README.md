@@ -20,3 +20,7 @@ A CRUD interface to Sqlite3 database for svg
 - v007: arc, cubic, quadratic tables addded. They are specific extensions for the path tag.
   - help updated.
   
+- v008: User Interface completely updated. 
+  - help updated.
+  - various optimizations.
+  
