@@ -15,12 +15,12 @@ A CRUD interface to Sqlite3 database for svg
   - Only image set to 1 are used as background, to use other images at their levels of visualization use imagetr.
 
 - v006: linetr, pathtr, polygontr, polylinetr tables added. They have the transform attribute field for their respective tables.
-  - help table added (Help menu link).
+  - Help table added (Help menu link).
   
 - v007: arc, cubic, quadratic tables addded. They are specific extensions for the path tag.
-  - help updated.
+  - Help updated.
   
 - v008: User Interface completely updated. 
-  - help updated.
-  - various optimizations.
+  - Help updated.
+  - Various optimizations.
   
